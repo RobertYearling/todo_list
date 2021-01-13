@@ -20,7 +20,7 @@ const Input = props => {
     };
 
     return(
-        <div className="container" style={{ display: 'flex'}}>
+        <div className="container" style={{ display: 'flex' }}>
             <input style={{ width: '600px'}} onChange={onChange} type="text" name="todo" />
             <button className="btn btn-dark btn-block"  onClick={onClick}>Add</button>
         </div>

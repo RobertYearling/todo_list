@@ -16,11 +16,11 @@ const Todo = props => {
 
     return (
         <div className="container">
-            <h4>{todo.name}</h4>
+            <div>{todo.isComplete ? <span><s>{todo.name}</s></span> : <span>{todo.name}</span> }</div>
             <div className="container">
                 <label htmlFor="checkbox">Completed</label>
                 <input onChange={onChange} type="checkbox" name="" checked={todo.isComplete} />
-                <button onClick={onClick} className="btn btn-med">x</button>
+                <button onClick={onClick} className="btn btn-dark">Delete</button>
             </div>
         </div>
     );
